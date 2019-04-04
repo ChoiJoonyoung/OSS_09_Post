@@ -5,7 +5,6 @@
 #include "21800753.h"
 #include "21400776.h"
 
-char* binarized(int i);
 int main(int argc, char *argv[]) {
 	boolean is_number = 0;
 	char input[2048];
