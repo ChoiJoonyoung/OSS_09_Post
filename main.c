@@ -39,10 +39,10 @@ int main(int argc, char *argv[]) {
 			reverse = reverse_digits(atoi(input)); //"21xx.h"
 			printf("reverse> %d\n", reverse);
 			if(isprime(atoi(input)) == TRUE){
-				printf("isprime> TRUE");
+				printf("isPrime> TRUE\n");
 			}
 			else if (isprime(atoi(input)) == FALSE) {
-				printf("isprime> FALSE");
+				printf("isPrime> FALSE\n");
 			}
 
 		}
