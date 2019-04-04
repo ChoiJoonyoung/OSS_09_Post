@@ -24,7 +24,7 @@ int sort_digits(int n) {
 		}
 		input[j + 1] = temp;
 	}
-	printf("\nsort> ");
+	printf("sort> ");
 	for (i = 0; i < MAX; i++) {
 		if (input[i] != 0)
 			printf("%d", input[i]);

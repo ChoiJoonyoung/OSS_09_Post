@@ -20,6 +20,7 @@ int main(int argc, char *argv[]) {
 
 		// Terminal condition
 		if (strcmp(input, "quit") == 0) {
+			printf("(bye)\n");
 			break;
 		}
 		is_number = TRUE;
