@@ -5,14 +5,9 @@
 #include "21800753.h"
 #include "21400776.h"
 
-typedef enum { FALSE, TRUE } bool;
-/*
-len: a simple character counting program
-Charmgil Hong
-*/
 
 int main(int argc, char *argv[]) {
-	bool is_number = 0;
+	boolean is_number = 0;
 	char input[2048];
 	int sort, reverse;
 	int i;
@@ -40,10 +35,17 @@ int main(int argc, char *argv[]) {
 			//compute and print the length
 			//reverse = reverse_digits(atoi(input)); //"21xx.h"
 			sort_digits(atoi(input)); //"21xy.h"
+			isprime(atoi(input));
 			reverse = reverse_digits(atoi(input)); //"21xx.h"
 			printf("reverse> %d\n", reverse);
-			//printf("reverse> %d \nsort> %d\n", reverse, sort);
+			if(isprime(atoi(input)) == TRUE){
+				printf("isprime> TRUE");
+			}
+			else if (isprime(atoi(input)) == FALSE) {
+				printf("isprime> FALSE");
+			}
 
 		}
 	}
 }
+
