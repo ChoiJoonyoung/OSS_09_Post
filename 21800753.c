@@ -33,3 +33,12 @@ int sort_digits(int n) {
 
 	return 0;
 }
+char *binarized(int i) {
+	char static s[32+1] = {0, };
+	int count = 32;
+
+	do{ s[--count] = '0' + (char) (i & 1);
+		i = i >> 1;
+	}while(count);
+	return s;
+}

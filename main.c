@@ -5,13 +5,12 @@
 #include "21800753.h"
 #include "21400776.h"
 
-
+char* binarized(int i);
 int main(int argc, char *argv[]) {
 	boolean is_number = 0;
 	char input[2048];
 	int sort, reverse;
 	int i;
-
 
 	while (fgets(input, sizeof(input), stdin) != NULL) {
 		// Receive a user input
@@ -34,17 +33,18 @@ int main(int argc, char *argv[]) {
 
 		if (is_number) {
 			//compute and print the length
-			//reverse = reverse_digits(atoi(input)); //"21xx.h"
-			sort_digits(atoi(input)); //"21xy.h"
-			isprime(atoi(input));
 			reverse = reverse_digits(atoi(input)); //"21xx.h"
 			printf("reverse> %d\n", reverse);
+			sort_digits(atoi(input));
+			printf("binary> %s", binarized(atoi(input)));
+			printf("\n");
 			if(isprime(atoi(input)) == TRUE){
 				printf("isPrime> TRUE\n");
 			}
 			else if (isprime(atoi(input)) == FALSE) {
 				printf("isPrime> FALSE\n");
 			}
+			printf("\n");
 
 		}
 	}
